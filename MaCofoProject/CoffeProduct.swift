@@ -8,9 +8,9 @@
 import Foundation
 
 struct CoffeeProduct: Codable, Identifiable {
-    let id: Int
-    let name: String
+    let id = UUID()
+    let title: String
     let description: String
+    let ingredients: [String]
     let image: String
-    let category: String
 }
