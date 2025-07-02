@@ -2,17 +2,15 @@
 //  CoffeProduct.swift
 //  MaCofoProject
 //
-//  Created by Foundation-010 on 30/06/25.
+//  Created by Foundation-010 on 01/07/25.
 //
 
 import Foundation
 
-struct CoffeProduct: Codable, Identifiable {
-    let id: Int
-    let name: String
+struct CoffeeProduct: Codable, Identifiable {
+    let id = UUID()
+    let title: String
     let description: String
+    let ingredients: [String]
     let image: String
-    let category: String
 }
-
-
